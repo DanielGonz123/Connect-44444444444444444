@@ -8,7 +8,7 @@ December 13, 2021
 
 #imports numbrt python package, renamed np
 def create_board():
-  board = [ ["O"] * 6 ] * 7
+  board = [ ["O"] * 7 ] * 6
   for row in board:
     print(row)
 
