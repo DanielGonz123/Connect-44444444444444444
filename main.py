@@ -1,54 +1,60 @@
 """
-Daniel Gonzalez
 Ethan Gonzalez
+Daniel Gonzalez
 Hugo Dorta
 Connect 4
 December 13, 2021
 """
 
+row1 = []
+row2 = []
+row3 = []
+row4 = []
+row5 = []
+row6 = []
 #variables to be put in a list
-A1 = "1"
-B1 = "1"
-C1 = "1"
-D1 = "1"
-E1 = "1"
-F1 = "1"
-A2 = "2"
-B2 = "2"
-C2 = "2"
-D2 = "2"
-E2 = "2"
-F2 = "2"
-A3 = "3"
-B3 = "3"
-C3 = "3"
-D3 = "3"
-E3 = "3"
-F3 = "3"
-A4 = "4"
-B4 = "4"
-C4 = "4"
-D4 = "4"
-E4 = "4"
-F4 = "4"
-A5 = "5"
-B5 = "5"
-C5 = "5"
-D5 = "5"
-E5 = "5"
-F5 = "5"
-A6 = "6"
-B6 = "6"
-C6 = "6"
-D6 = "6"
-E6 = "6"
-F6 = "6"
-A7 = "7"
-B7 = "7"
-C7 = "7"
-D7 = "7"
-E7 = "7"
-F7 = "7"
+A1 = "A1"
+B1 = "B1"
+C1 = "C1"
+D1 = "D1"
+E1 = "E1"
+F1 = "F1"
+A2 = "A2"
+B2 = "B2"
+C2 = "C2"
+D2 = "D2"
+E2 = "E2"
+F2 = "F2"
+A3 = "A3"
+B3 = "B3"
+C3 = "C3"
+D3 = "D3"
+E3 = "E3"
+F3 = "F3"
+A4 = "A4"
+B4 = "B4"
+C4 = "C4"
+D4 = "D4"
+E4 = "E4"
+F4 = "F4"
+A5 = "A5"
+B5 = "B5"
+C5 = "C5"
+D5 = "D5"
+E5 = "E5"
+F5 = "F5"
+A6 = "A6"
+B6 = "B6"
+C6 = "C6"
+D6 = "D6"
+E6 = "E6"
+F6 = "F6"
+A7 = "A7"
+B7 = "B7"
+C7 = "C7"
+D7 = "D7"
+E7 = "E7"
+F7 = "F7"
 
 #imports numbrt python package, renamed np
 def create_board():
@@ -71,13 +77,18 @@ def create_board():
   return row5
   return row6
 
+def checkEmpty():
+  if p1Play == A1 or p1Play == B1 or p1Play == C1 or p1Play == D1 or p1Play == E1:
+    p1Play = F1
+
 def move():
   p1Play = input("Where would you like to put your X, P1: ")
-  while p1Play not in row1 and row2 and row3 and row4 and row5 and row6:
+  while p1Play not in row1 and p1Play not in row2 and p1Play not in row3 and p1Play not in row4 and p1Play not in row5 and p1Play not in row6:
     p1Play = input("Where would you like to put your X, P1: ")
   p2Play = input("Where would you like to put your 0, P2: ")
-  while p2Play not in row1 and row2 and row3 and row4 and row5 and row6:
+  while p2Play not in row1 and p2Play not in row2 and p2Play not in row3 and p2Play not in row4 and p2Play not in row5 and p2Play not in row6:
     p2Play = input("Where would you like to put your 0, P2: ")
+ #all options will be X for player 1
   if p1Play == A1:
     A1 = "X"
   elif p1Play == A2:
@@ -165,7 +176,7 @@ def move():
   
 
 
-  
+# all options will be zero for player 2  
   if p2Play == A1:
     A1 = "0"
   elif p2Play == A2:
@@ -250,7 +261,11 @@ def move():
     F6 = "0"
   elif p2Play == F7:
     F7 = "0"
+  
+  if p1Play in row1 or p1Play in row2 or p1Play in row3 or p1Play in row4 or p1Play in row5:
+    checkEmpty()
+    
 
-create_board()
 while True:
+  create_board()
   move()
