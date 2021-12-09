@@ -79,191 +79,195 @@ def create_board():
 
 def checkEmpty():
   if p1Play == A1 or p1Play == B1 or p1Play == C1 or p1Play == D1 or p1Play == E1:
-    p1Play = F1
+    p1Play == F1:
 
 def move():
   p1Play = input("Where would you like to put your X, P1: ")
   while p1Play not in row1 and p1Play not in row2 and p1Play not in row3 and p1Play not in row4 and p1Play not in row5 and p1Play not in row6:
     p1Play = input("Where would you like to put your X, P1: ")
+  
   p2Play = input("Where would you like to put your 0, P2: ")
   while p2Play not in row1 and p2Play not in row2 and p2Play not in row3 and p2Play not in row4 and p2Play not in row5 and p2Play not in row6:
     p2Play = input("Where would you like to put your 0, P2: ")
+  
  #all options will be X for player 1
-  if p1Play == A1:
+  if p1Play == "A1":
     A1 = "X"
-  elif p1Play == A2:
+  elif p1Play == "A2":
     A2 = "X"
-  elif p1Play == A3:
+  elif p1Play == "A3":
     A3 = "X"
-  elif p1Play == A4:
+  elif p1Play == "A4":
     A4 = "X"
-  elif p1Play == A5:
+  elif p1Play == "A5":
     A5 = "X"
-  elif p1Play == A6:
+  elif p1Play == "A6":
     A6 = "X"
-  elif p1Play == A7:
+  elif p1Play == "A7":
     A7 = "X"
-  elif p1Play == B1:
+  elif p1Play == "B1":
     B1 = "X"
-  elif p1Play == B2:
+  elif p1Play == "B2":
     B2 = "X"
-  elif p1Play == B3:
+  elif p1Play == "B3":
     B3 = "X"
-  elif p1Play == B4:
+  elif p1Play == "B4":
     B4 = "X"
-  elif p1Play == B5:
+  elif p1Play == "B5":
     B5 = "X"
-  elif p1Play == B6:
+  elif p1Play == "B6":
     B6 = "X"
-  elif p1Play == B7:
+  elif p1Play == "B7":
     B7 = "X"
-  elif p1Play == C1:
+  elif p1Play == "C1":
     C1 = "X"
-  elif p1Play == C2:
+  elif p1Play == "C2":
     C2 = "X"
-  elif p1Play == C3:
+  elif p1Play == "C3":
     C3 = "X"
-  elif p1Play == C4:
+  elif p1Play == "C4":
     C4 = "X"
-  elif p1Play == C5:
+  elif p1Play == "C5":
     C5 = "X"
-  elif p1Play == C6:
+  elif p1Play == "C6":
     C6 = "X"
-  elif p1Play == C7:
+  elif p1Play == "C7":
     C7 = "X"
-  elif p1Play == D1:
+  elif p1Play == "D1":
     D1 = "X"
-  elif p1Play == D2:
+  elif p1Play == "D2":
     D2 = "X"
-  elif p1Play == D3:
+  elif p1Play == "D3":
     D3 = "X"
-  elif p1Play == D4:
+  elif p1Play == "D4":
     D4 = "X"
-  elif p1Play == D5:
+  elif p1Play == "D5":
     D5 = "X"
-  elif p1Play == D6:
+  elif p1Play == "D6":
     D6 = "X"
-  elif p1Play == D7:
+  elif p1Play == "D7":
     D7 = "X"
-  elif p1Play == E1:
+  elif p1Play == "E1":
     E1 = "X"
-  elif p1Play == E2:
+  elif p1Play == "E2":
     E2 = "X"
-  elif p1Play == E3:
+  elif p1Play == "E3":
     E3 = "X"
-  elif p1Play == E4:
+  elif p1Play == "E4":
     E4 = "X"
-  elif p1Play == E5:
+  elif p1Play == "E5":
     E5 = "X"
-  elif p1Play == E6:
+  elif p1Play == "E6":
     E6 = "X"
-  elif p1Play == E7:
+  elif p1Play == "E7":
     E7 = "X"
-  elif p1Play == F1:
+  elif p1Play == "F1":
     F1 = "X"
-  elif p1Play == F2:
+  elif p1Play == "F2":
     F2 = "X"
-  elif p1Play == F3:
+  elif p1Play == "F3":
     F3 = "X"
-  elif p1Play == F4:
+  elif p1Play == "F4":
     F4 = "X"
-  elif p1Play == F5:
+  elif p1Play == "F5":
     F5 = "X"
-  elif p1Play == F6:
+  elif p1Play == "F6":
     F6 = "X"
-  elif p1Play == F7:
+  elif p1Play == "F7":
     F7 = "X"
   
 
 
-# all options will be zero for player 2  
-  if p2Play == A1:
+# all options will be 0 for player 2  
+  if p2Play == "A1":
     A1 = "0"
-  elif p2Play == A2:
+  elif p2Play == "A2":
     A2 = "0"
-  elif p2Play == A3:
+  elif p2Play == "A3":
     A3 = "0"
-  elif p2Play == A4:
+  elif p2Play == "A4":
     A4 = "0"
-  elif p2Play == A5:
+  elif p2Play == "A5":
     A5 = "0"
-  elif p2Play == A6:
+  elif p2Play == "A6":
     A6 = "0"
-  elif p2Play == A7:
+  elif p2Play == "A7":
     A7 = "0"
-  elif p2Play == B1:
+  elif p2Play == "B1":
     B1 = "0"
-  elif p2Play == B2:
+  elif p2Play == "B2":
     B2 = "0"
-  elif p2Play == B3:
+  elif p2Play == "B3":
     B3 = "0"
-  elif p2Play == B4:
+  elif p2Play == "B4":
     B4 = "0"
-  elif p2Play == B5:
+  elif p2Play == "B5":
     B5 = "0"
-  elif p2Play == B6:
+  elif p2Play == "B6":
     B6 = "0"
-  elif p2Play == B7:
+  elif p2Play == "B7":
     B7 = "0"
-  elif p2Play == C1:
+  elif p2Play == "C1":
     C1 = "0"
-  elif p2Play == C2:
+  elif p2Play == "C2":
     C2 = "0"
-  elif p2Play == C3:
+  elif p2Play == "C3":
     C3 = "0"
-  elif p2Play == C4:
+  elif p2Play == "C4":
     C4 = "0"
-  elif p2Play == C5:
+  elif p2Play == "C5":
     C5 = "0"
-  elif p2Play == C6:
+  elif p2Play == "C6":
     C6 = "0"
-  elif p2Play == C7:
+  elif p2Play == "C7":
     C7 = "0"
-  elif p2Play == D1:
+  elif p2Play == "D1":
     D1 = "0"
-  elif p2Play == D2:
+  elif p2Play == "D2":
     D2 = "0"
-  elif p2Play == D3:
+  elif p2Play == "D3":
     D3 = "0"
-  elif p2Play == D4:
+  elif p2Play == "D4":
     D4 = "0"
-  elif p2Play == D5:
+  elif p2Play == "D5":
     D5 = "0"
-  elif p2Play == D6:
+  elif p2Play == "D6":
     D6 = "0"
-  elif p2Play == D7:
+  elif p2Play == "D7":
     D7 = "0"
-  elif p2Play == E1:
+  elif p2Play == "E1":
     E1 = "0"
-  elif p2Play == E2:
+  elif p2Play == "E2":
     E2 = "0"
-  elif p2Play == E3:
+  elif p2Play == "E3":
     E3 = "0"
-  elif p2Play == E4:
+  elif p2Play == "E4":
     E4 = "0"
-  elif p2Play == E5:
+  elif p2Play == "E5":
     E5 = "0"
-  elif p2Play == E6:
+  elif p2Play == "E6":
     E6 = "0"
-  elif p2Play == E7:
+  elif p2Play == "E7":
     E7 = "0"
-  elif p2Play == F1:
+  elif p2Play == "F1":
     F1 = "0"
-  elif p2Play == F2:
+  elif p2Play == "F2":
     F2 = "0"
-  elif p2Play == F3:
+  elif p2Play == "F3":
     F3 = "0"
-  elif p2Play == F4:
+  elif p2Play == "F4":
     F4 = "0"
-  elif p2Play == F5:
+  elif p2Play == "F5":
     F5 = "0"
-  elif p2Play == F6:
+  elif p2Play == "F6":
     F6 = "0"
-  elif p2Play == F7:
+  elif p2Play == "F7":
     F7 = "0"
   
   if p1Play in row1 or p1Play in row2 or p1Play in row3 or p1Play in row4 or p1Play in row5:
     checkEmpty()
+  return p1Play
+  return p2Play
     
 
 while True:
